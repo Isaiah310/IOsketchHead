@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -25,5 +25,11 @@ for (int i = 0; i < 1000; i++)
     void Update()
     {
 
+    }
+    [Header("Game Over UI Canvas Object")]
+    public GameObject gameOverCanvas;
+    public void GameOver()
+    {
+        gameOverCanvas.SetActive(true);
     }
 }
